@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+<body>
+    <!-- Blog Questions Start -->
+    <section class="container mt-5 mb-5" id="about">
+        <div class="container text-center">
+          <h2 class="fs-2 fw-bold px-lg-5 mx-lg-5 ">Blog Questions</h2>
+        </div>
+        <div class="row px-lg-5 mx-lg-5 mt-5">
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Discuss the scope of var, let, and const?
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p><strong>Var: </strong>The scope of a var variable is functional scope. It can be updated and re-declared into the scope.</p>
+                  <p><strong>let: </strong>The scope of a let variable is block scope. It can be updated but cannot be re-declared into the scope.</p>
+                  <p><strong>Const:</strong> The scope of a const variable is block scope. It cannot be updated or re-declared into the scope.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Tell us the use cases of null and undefined ?
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p><strong>Null: </strong>Variable Declaration: When a variable is declared but not assigned a value, it is automatically initialized to undefined.
+                    Function Parameters: If a function parameter is not provided with a value during a function call, its value is undefined.
+                    Missing Object Properties: If you try to access an object property that doesn't exist, it returns undefined.
+                    Return Value: If a function doesn't have a return statement or the return statement doesn't specify a value, the function returns undefined...</p><br>
+                  <p><strong>Undefined: </strong>Explicit Absence: Developers can assign the value null to variables, properties, or objects to explicitly indicate the absence of a value or unknown value.
+                    As a Placeholder: Sometimes, null is used as a placeholder while working with databases, APIs, or data manipulation to indicate that a value is intentionally missing or not yet defined.
+                    Error Handling: In some cases, when an operation or request fails, it might return null to indicate that the expected result couldn't be obtained.
+                    Use Cases for Both:
+                    Default Values: They can be used as default values for variables, function parameters, or object properties when you want to represent a missing or unspecified value.
+                    Type Checking: Developers might use null and undefined to check for the presence or absence of values in conditional statements or validation processes.
+                    Data Manipulation: In certain data manipulation tasks, you might need to distinguish between explicit "no value" (null) and "not set" (undefined) scenarios.
+                    It's important to handle null and undefined properly in your code to prevent unexpected behaviors, crashes, or logical errors. You can use conditional statements, type checks, and proper error handling techniques to manage these special values effectively...
+                    </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    What do you mean by REST API?
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p><strong>What do you mean by REST API:</strong> An API, or application programming interface, is a set of rules that define how applications or devices can connect to and communicate with each other. A REST API is an API that conforms to the design principles of the REST, or representational state transfer architectural style..</p>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+</html>
